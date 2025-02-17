@@ -18,6 +18,27 @@
 	
 	<input type="button" onclick="insert_Row()" value="Insert row">  
     <script type="text/javascript" src="./script.js">
+		function insert_Row() {
+    const table = document.getElementById("sampleTable");
+    const newRow = table.insertRow(0); // Insert at the top
+    
+    const cell1 = newRow.insertCell(0);
+    const cell2 = newRow.insertCell(1);
+    
+    cell1.textContent = "New Cell1";
+    cell2.textContent = "New Cell2";
+    
+    // Optional styling for better visibility
+    newRow.style.fontWeight = "bold";
+    newRow.style.backgroundColor = "#f0f0f0";
+    
+    cell1.style.padding = "5px";
+    cell2.style.padding = "5px";
+    
+    cell1.style.border = "1px solid black";
+    cell2.style.border = "1px solid black";
+}
+
 </script>
 
 </body>
